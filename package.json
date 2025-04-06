@@ -1,5 +1,6 @@
 {
   "name": "niko-portfolio",
+  "homepage": "https://nikosardas.github.io/niko-portfolio/",
   "version": "0.1.0",
   "private": true,
   "scripts": {

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black p-8">
@@ -5,7 +7,7 @@ export default function Home() {
         <section>
           <h1 className="text-3xl font-bold">Niko Sardas</h1>
           <p className="text-lg">
-            I build tools and interfaces that solve real problems for users. My background blends development and IT support, with experience shipping a Chrome extension used by 10,000+ people and supporting enterprise systems in higher education.
+            I build tools and interfaces that solve real problems for users. My background blends development and IT support, with experience shipping a Chrome extension and supporting enterprise systems in higher education.
           </p>
         </section>
 
@@ -16,9 +18,20 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-medium">Equalizer Plus – Chrome Extension</h3>
               <p>
-                Real-time audio control in the browser: 10-band EQ, compressor, gain, panning, mono toggle. Built
-                entirely in vanilla JS using the Web Audio API and Chrome extension APIs. Used by 10,000+ people.
+                Chrome extension for real-time audio control, built with vanilla JavaScript, Web Audio API, and Chrome APIs. Features include EQ, compressor, pan, mono, and volume.
               </p>
+              <div className="my-4">
+                <Image
+                  src="/eq-plus.png"
+                  alt="Equalizer Plus UI"
+                  width={600}
+                  height={900}
+                  className="rounded-xl border shadow-md"
+                />
+                <p className="text-sm text-gray-600 mt-2">
+                  Equalizer Plus UI showing EQ, compressor, and pan settings.
+                </p>
+              </div>
               <a
                 href="https://chrome.google.com/webstore/detail/equalizer-plus/hhknncjekdkcckekbooephopomcjeiek"
                 target="_blank"
@@ -40,8 +53,14 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-medium">Chrome Extensions & Web Utilities</h3>
               <p>
-                Built and monetized Chrome extensions and web tools using HTML, CSS, JavaScript, jQuery, and Chrome APIs.
-                Emphasis on performance, minimalism, and user clarity.
+                Built and maintain several Chrome extensions: a karaoke machine, window manager, and extension bar partitioner. Proficient in HTML/CSS, JavaScript, and Chrome APIs. Focused on performance and clarity.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-medium">Drum Machine & MIDI Piano</h3>
+              <p>
+                Currently building browser-based music tools that export audio and MIDI. Focused on practical UX and deep integration with audio workflows.
               </p>
             </div>
           </div>
@@ -58,6 +77,10 @@ export default function Home() {
             Download my resume (PDF)
           </a>
         </section>
+
+        <footer className="text-sm text-gray-500 pt-10">
+          Built with Next.js, Tailwind CSS, and deployed via GitHub Pages.
+        </footer>
       </div>
     </main>
   );
