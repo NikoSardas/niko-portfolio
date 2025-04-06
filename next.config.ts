@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  assetPrefix: "/",
+  basePath: "/nikosardas.github.io",
+  output: "export",
 };
 
 export default nextConfig;
