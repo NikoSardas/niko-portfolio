@@ -76,9 +76,8 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-medium">Drum Machine & MIDI Piano</h3>
               <p>
-                Currently building browser-based music tools that export audio
-                and MIDI. Focused on practical UX and deep integration with
-                audio workflows.
+                Browser-based music tools that export audio and MIDI. Focused on
+                practical UX and deep integration with audio workflows.
               </p>
             </div>
           </div>
