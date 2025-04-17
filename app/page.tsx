@@ -16,7 +16,7 @@ export default function Home() {
 
         <section>
           <h1 className="text-3xl font-bold text-center mt-4">Niko Sardas</h1>
-          <p className="text-lg text-center mt-2">
+          <p className="text-lg mt-2">
             I am an IT support technician with a background in digital audio and
             Chrome extension development. I&apos;ve released tools like EQ+ and
             KBD to MIDI Piano, blending problem-solving, interface design, and
