@@ -61,7 +61,7 @@ export default function Home() {
               >
                 Resume (PDF)
               </a>{" "}
-              – Internal tools/dev-focused resume
+              – Internal tools/dev resume
             </li>
             <li>
               <a
