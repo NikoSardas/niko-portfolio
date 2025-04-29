@@ -1,38 +1,11 @@
 import Image from "next/image";
-
-interface Repo {
-  name: string;
-  html_url: string;
-  description: string;
-}
+import RepoList from "./repoList";
 
 const isProd = process.env.NODE_ENV === "production";
 
 const imageSrc = isProd ? "/niko-portfolio/niko.jpg" : "/niko.jpg";
 
-async function getRepos(): Promise<Repo[]> {
-  const res = await fetch(
-    "https://api.github.com/users/nikosardas/repos?sort=updated",
-    {
-      headers: { Accept: "application/vnd.github.v3+json" },
-      // cache: "no-store"
-    }
-  );
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch GitHub repos");
-  }
-
-  const data = await res.json();
-  return data
-    .filter(
-      (repo: Repo) => !["niko-portfolio", "NikoSardas"].includes(repo.name)
-    )
-    .slice(0, 5); // Only show 5 repos, excluding certain projects}
-}
-
-export default async function Home() {
-  const repos = await getRepos();
+export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black p-8">
       <div className="max-w-3xl mx-auto space-y-6">
@@ -57,24 +30,11 @@ export default async function Home() {
           </p>
         </section>
 
-        <section>
-          <h2 className="text-2xl font-semibold mt-8 mb-2">Repos</h2>
-          <ul className="space-y-2">
-            {repos.map((repo) => (
-              <li key={repo.name}>
-                <a
-                  href={repo.html_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 underline"
-                >
-                  {repo.name}
-                </a>{" "}
-                – {repo.description}
-              </li>
-            ))}
+        <RepoList />
 
-            <h2 className="text-2xl font-semibold mt-8 mb-2">Links</h2>
+        <section>
+          <h2 className="text-2xl font-semibold mt-8 mb-2">Links</h2>
+          <ul className="space-y-2">
             <li>
               <a
                 href="/niko-portfolio/Niko_Sardas_Resume_InternalTools.pdf"
