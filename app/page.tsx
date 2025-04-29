@@ -37,7 +37,7 @@ export default function Home() {
           <ul className="space-y-2">
             <li>
               <a
-                href="/niko-portfolio/Niko_Sardas_Resume_InternalTools.pdf"
+                href="/niko-portfolio/Niko_Sardas_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline"
