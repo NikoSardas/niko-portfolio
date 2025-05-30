@@ -16,7 +16,7 @@ export default function RepoList() {
       const data = await res.json();
       const filtered = data
         .filter((repo: Repo) => !["niko-portfolio", "NikoSardas"].includes(repo.name))
-        .slice(0, 5);
+        .slice(0, 10);
       setRepos(filtered);
     }
     fetchRepos();
