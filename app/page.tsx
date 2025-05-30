@@ -22,22 +22,18 @@ export default function Home() {
         <section>
           <h1 className="text-3xl font-bold text-center mt-4">Niko Sardas</h1>
           <p className="text-lg mt-2">
-            I am an IT support technician with a background in digital audio and
-            Chrome extension development. I&apos;ve released tools like EQ+ and
-            KBD to MIDI Piano, blending problem-solving, interface design, and
-            creative tech. Currently, I&apos;m focused on building lean, useful
-            interfaces and continuing to sharpen my development skills.
+            IT support technician. Background in digital audio and creative
+            tech. Currently focused on keeping systems running, solving problems
+            fast, and making sure people can do their jobs.
           </p>
         </section>
-
-        <RepoList />
 
         <section>
           <h2 className="text-2xl font-semibold mt-8 mb-2">Links</h2>
           <ul className="space-y-2">
             <li>
               <a
-                href="/niko-portfolio/Niko_Sardas_Resume.pdf"
+                href="/niko-portfolio/Niko_Sardas_Resume.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline"
@@ -65,6 +61,8 @@ export default function Home() {
             </li>
           </ul>
         </section>
+
+        <RepoList />
 
         <footer className="text-sm text-gray-600 text-center pt-10 border-t mt-12">
           <p>© Niko Sardas 2025</p>
