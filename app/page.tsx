@@ -1,5 +1,4 @@
 import Image from "next/image";
-import RepoList from "./repoList";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -38,7 +37,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-600 underline"
               >
-                Resume (PDF)
+                Resume
               </a>
             </li>
             <li>
@@ -59,10 +58,16 @@ export default function Home() {
                 Email
               </a>
             </li>
+            <li>
+              <a
+                href="'https://github.com/nikosardas/'"
+                className="text-blue-600 underline"
+              >
+                Github
+              </a>
+            </li>
           </ul>
         </section>
-
-        <RepoList />
 
         <footer className="text-sm text-gray-600 text-center pt-10 border-t mt-12">
           <p>© Niko Sardas 2025</p>
