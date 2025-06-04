@@ -29,7 +29,7 @@ export default function Home() {
 
         <section>
           <h2 className="text-2xl font-semibold mt-8 mb-2">Links</h2>
-          <ul className="space-y-2">
+          <ul className="flex space-x-6 justify-center">
             <li>
               <a
                 href="/niko-portfolio/Niko_Sardas_Resume.docx"
