@@ -28,7 +28,6 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mt-8 mb-2">Links</h2>
           <ul className="flex space-x-6 justify-center">
             <li>
               <a
