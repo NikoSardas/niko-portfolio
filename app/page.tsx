@@ -31,7 +31,7 @@ export default function Home() {
           <ul className="flex space-x-6 justify-center">
             <li>
               <a
-                href="/niko-portfolio/Niko_Sardas_Resume.docx"
+                href="/niko-portfolio/Niko_Sardas_IT_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline"
