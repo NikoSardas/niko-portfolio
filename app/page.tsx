@@ -41,7 +41,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/nikosardas/"
+                href="https://www.linkedin.com/in/niko-sardas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline"
