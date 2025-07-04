@@ -35,9 +35,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline"
-              >
-                Resume
-              </a>
+              >Resume</a>
             </li>
             <li>
               <a
@@ -59,7 +57,9 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="'https://github.com/nikosardas/'"
+                href="https://github.com/nikosardas/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-600 underline"
               >
                 Github
